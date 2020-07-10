@@ -1,6 +1,6 @@
 import React from "react";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-//import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -42,8 +42,9 @@ export default function App() {
         <body className={classes.body} />
       </Helmet>
       <ThemeProvider theme={theme}>
-        <Header />
-       <Works /> 
+        <NavBar/> 
+        <Header/>
+        <Works /> 
         <About />
         <Skills />
         <Contact />

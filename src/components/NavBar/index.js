@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import { Link} from "react-scroll"
 import { motion, AnimateSharedLayout } from "framer-motion";
-import { Toolbar } from "@material-ui/core";
+import {Toolbar} from "@material-ui/core";
 import "../style.css"
 
 
@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
             color: "grey",
         }
     },
-    navbar: props => ({
+    NavBar: props => ({
         width: "100%",
         zIndex: 100,
         position: props.isSticky ? "fixed" : "initial",
@@ -52,11 +52,11 @@ const useStyles = makeStyles(theme => ({
         }
     }
 }))
-export default function NavBar({ isSticky }) {
+export default function NavBar ({ isSticky }) {
     const classes = useStyles({ isSticky: isSticky });
     const [selected, setSelected] = useState(0);
 
-    const navbar = {
+    const  navbar = {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 200 }
     }
@@ -83,9 +83,16 @@ export default function NavBar({ isSticky }) {
             menuItem: "Contact",
             to: "contact"
         }
+
+
+
+
+
+
     ];
 
     return (
+
         <div className={classes.navbar}>
             <motion.div
                 initial="hidden"
@@ -93,7 +100,7 @@ export default function NavBar({ isSticky }) {
                 transition={{ duration: 0.7 }}
                 variants={navbar}
                 center={"x"}
-                background={"#fff"}
+                background={"#ffff"}
             >
                 <Toolbar className={classes.toolbar}>
                     <AnimateSharedLayout>

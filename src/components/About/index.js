@@ -55,9 +55,7 @@ export default function About() {
                                 My goal is to develop powerful products with fast user interface and optimized performance while getting an attractive UI/UX interfaces.
                              </Box>
                             <Box lineHeight={2}>
-                                My background in Art History makes me think creatively with an artistic outlook. I think of
-                                the interface like a painting where I seek to create harmony and a good balance between the
-                                color and components. My specialities are React.js and material UI to get a clean and modern design.
+                                My background in Marketing background makes me think creatively with business markert outlook. 
                                 </Box>
                         </Typography>
                     </Grid>

@@ -116,6 +116,9 @@ export default function Header() {
 
     return (
         <div id="header" className={classes.root}>
+            {/* <div ref={menuRef} style={{ position: "absolute", bottom: "70px", height: "64px" }}>
+                <NavBar isSticky={isSticky} />
+            </div> */}
             <Container maxWidth="md" className={classes.networks}>
                 <SocialNetwork />
             </Container>
@@ -130,9 +133,7 @@ export default function Header() {
                     <Typography>Here check <Link href="https://www.arayanawrath.com" target="_blank" className={classes.link} >this website</Link>.</Typography>
                 </motion.div>
             </Container >
-            <div ref={menuRef} style={{ position: "absolute", bottom: "70px", height: "64px" }}>
-                <NavBar isSticky={isSticky} />
-            </div>
+            
         </div >
     );
 }

@@ -7,7 +7,7 @@ import noteTaker from "../Works/assets/noteTaker.png";
 import books from "../Works/assets/books.png";
 import codeQuiz from "../Works/assets/codeQuiz.png";
 import weatherDashboard from "../Works/assets/weatherDashboard.png";
-import dayPlanner from "../Works/assets/dayPlanner";
+import dayPlanner from "../Works/assets/dayPlanner.png";
 import passwordGenerator from "../Works/assets/passwordGenerator.png";
 import projectTwo from "../Works/assets/projectTwo.png";
 import projectone from "../Works/assets/projectone.png";
@@ -47,7 +47,7 @@ function arrayEquals(array1, array2) {
     return array1.length === array2.length && array1.every(value => array2.includes(value))
 }
 
-export default function Works() {
+function Works() {
     const classes = useStyles()
 
     const all = ['projects', 'team']
@@ -60,9 +60,9 @@ export default function Works() {
     return (
         <div id="works" className={classes.root}>
             <Container maxWidth="md">
-                <Title>
+                {/* <Title> */}
                     <Typography>Works</Typography>
-                </Title>
+                {/* </Title> */}
                 <div mb={10} style={{ paddingBottom: "20px" }} >
                     <Button onClick={() => setCategoriesToShow(all)} disabled={arrayEquals(categoriesToShow, all)}>Show all</Button>
                     <Button onClick={() => setCategoriesToShow(["projects"])} disabled={arrayEquals(categoriesToShow, ["projects"])}>Projects</Button>
@@ -191,3 +191,4 @@ export default function Works() {
         </div>
     )
 }
+export default Works;
