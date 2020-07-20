@@ -22,7 +22,8 @@ const useStyles = makeStyles(theme => ({
         zIndex: 100,
         position: props.isSticky ? "fixed" : "initial",
         top: props.isSticky ? 0 : "",
-        background: "#fafafa",
+        //background: "#fafafa",
+        background: "src = {process.env.PUBLIC_URL + '/mee.jpg'}"
     }),
     underline: {
         width: "100%",

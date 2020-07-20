@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
         minHeight: `calc(100vh - ${theme.spacing(35)}px)`,
         width: "100%",
         padding: theme.spacing(20, 0, 15, 0),
-        background: "#fafafa",
+        background: "{process.env./About/assets_URL + '/firmin-girard.jpg'}",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",

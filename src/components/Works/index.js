@@ -53,10 +53,10 @@ function Works() {
     const all = ['projects', 'team']
     const [categoriesToShow, setCategoriesToShow] = React.useState(all)
 
-    const Title = {
-        visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -40 }
-    }
+    // const Title = {
+    //    visible: { opacity: 1, x: 0 },
+        // hidden: { opacity: 0, x: -40 }
+    // }
     return (
         <div id="works" className={classes.root}>
             <Container maxWidth="md">
